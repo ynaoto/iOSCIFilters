@@ -1,8 +1,8 @@
 CIFilters
 ============
 Core Image Filter の学習用サンプルです。
-とりあえず inputImage, backgroudImage, targetImage, maskImage を取り扱うようにしました。
-他の入力値は追って作ります。
+とりあえず inputImage, backgroudImage, targetImage, maskImage と、NSNumber クラスの入力値を取り扱うようにしました。
+他の入力値(CIVector等)は追って作ります。
 
 ![CIFilters](./snapshot.png)
 
