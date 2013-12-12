@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4063CFD0-EE69-4901-B46B-2CF59448E182</string>
+	<string>92850DCE-C96B-4A9D-80F3-9EDC9009AB8F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CIFilters</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4718EB0E-84CC-44F2-BA75-2EEB64DC3C91</key>
-		<string>https://github.com/ynaoto/private.git</string>
+		<key>10CB7717-1317-425B-A3CE-328E5909A175</key>
+		<string>https://github.com/ynaoto/iOSCIFilters.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/practice/CIFilters/CIFilters.xcodeproj/project.xcworkspace</string>
+	<string>CIFilters.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4718EB0E-84CC-44F2-BA75-2EEB64DC3C91</key>
-		<string>../../../../..</string>
+		<key>10CB7717-1317-425B-A3CE-328E5909A175</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ynaoto/private.git</string>
+	<string>https://github.com/ynaoto/iOSCIFilters.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4718EB0E-84CC-44F2-BA75-2EEB64DC3C91</string>
+	<string>10CB7717-1317-425B-A3CE-328E5909A175</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4718EB0E-84CC-44F2-BA75-2EEB64DC3C91</string>
+			<string>10CB7717-1317-425B-A3CE-328E5909A175</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Sprites</string>
+			<string>iOSCIFilters</string>
 		</dict>
 	</array>
 </dict>
