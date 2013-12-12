@@ -27,6 +27,34 @@
 
 @end
 
+@interface MySlider : UISlider
+@property (nonatomic) UILabel *valueLabel;
+
+@end
+
+@implementation MySlider
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        CGFloat w = self.frame.size.width;
+        CGFloat h = self.frame.size.height;
+        self.valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, w, h/2)];
+        self.valueLabel.text = @"abc";
+        [self addSubview:self.valueLabel];
+    }
+    return self;
+}
+
+- (void)setValue:(float)value
+{
+    super.value = value;
+    self.valueLabel.text = [NSString stringWithFormat:@"%g", value];
+}
+
+@end
+
 @interface AttributeTableViewController ()
 
 @end
@@ -82,6 +110,20 @@
     return inputKeys.count;
 }
 
+- (void)sliderChanged:(MySlider*)sender event:(UIEvent*)event
+{
+    NSLog(@"%s: value = %g", __FUNCTION__, sender.value);
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint p = [touch locationInView:self.tableView];
+    NSIndexPath *path = [self.tableView indexPathForRowAtPoint:p];
+    if (path) {
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:path];
+        NSString *key = cell.textLabel.text;
+        NSLog(@"key = %@", key);
+        [filter setValue:@(sender.value) forKey:key];
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -95,6 +137,31 @@
     NSString *type = a[kCIAttributeType];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%@)", type, class];
     
+    MySlider *slider = nil;
+    for (UIView *view in cell.contentView.subviews) {
+        if ([view isKindOfClass:MySlider.class]) {
+            slider = (MySlider*)view;
+            break;
+        }
+    }
+
+    if ([class isEqualToString:@"NSNumber"]) {
+        if (!slider) {
+            CGFloat w = cell.frame.size.width;
+            CGFloat h = cell.frame.size.height;
+            slider = [[MySlider alloc] initWithFrame:CGRectMake(w/2, 0, w/2, h)];
+            [cell.contentView addSubview:slider];
+        }
+        slider.minimumValue = [a[kCIAttributeSliderMin] floatValue];
+        slider.maximumValue = [a[kCIAttributeSliderMax] floatValue];
+        slider.value = [a[kCIAttributeDefault] floatValue];
+        slider.alpha = 0.5;
+        
+        [slider addTarget:self action:@selector(sliderChanged:event:) forControlEvents:UIControlEventValueChanged];
+    } else {
+        [slider removeFromSuperview];
+    }
+
     return cell;
 }
 
