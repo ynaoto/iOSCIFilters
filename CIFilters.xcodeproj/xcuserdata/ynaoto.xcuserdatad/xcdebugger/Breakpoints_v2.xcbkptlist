@@ -41,12 +41,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CIFilters/AttributeTableViewController.m"
-            timestampString = "408557027.623078"
+            timestampString = "408559211.982665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CIFilters/AttributeTableViewController.m"
+            timestampString = "408559211.982665"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-sliderChanged:event:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
