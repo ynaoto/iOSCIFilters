@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		932A53DF18598C8300B5662C /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932A53DE18598C8300B5662C /* FilterTableViewController.m */; };
 		932A53E2185996B600B5662C /* AttributeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932A53E1185996B600B5662C /* AttributeTableViewController.m */; };
-		932A53E41859C0C200B5662C /* zzm_zunda.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53E31859C0C200B5662C /* zzm_zunda.png */; };
-		932A53E61859CBD600B5662C /* zzm_aruku01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53E51859CBD600B5662C /* zzm_aruku01.png */; };
-		932A53E81859CC1800B5662C /* zzm_mochi01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53E71859CC1800B5662C /* zzm_mochi01.png */; };
+		932A53EA1859E20200B5662C /* zzm_mochi01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53E91859E20200B5662C /* zzm_mochi01.png */; };
+		932A53ED1859E23200B5662C /* zzm_aruku01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53EB1859E23200B5662C /* zzm_aruku01.png */; };
+		932A53EE1859E23200B5662C /* zzm_zunda.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53EC1859E23200B5662C /* zzm_zunda.png */; };
 		933318821850E1AD00625A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318811850E1AD00625A7E /* Foundation.framework */; };
 		933318841850E1AD00625A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318831850E1AD00625A7E /* CoreGraphics.framework */; };
 		933318861850E1AD00625A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318851850E1AD00625A7E /* UIKit.framework */; };
@@ -45,9 +45,9 @@
 		932A53DE18598C8300B5662C /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
 		932A53E0185996B600B5662C /* AttributeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeTableViewController.h; sourceTree = "<group>"; };
 		932A53E1185996B600B5662C /* AttributeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeTableViewController.m; sourceTree = "<group>"; };
-		932A53E31859C0C200B5662C /* zzm_zunda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zzm_zunda.png; path = ../../../products/FoldableImages/FoldableImages/Images/Zunko/zzm_zunda.png; sourceTree = "<group>"; };
-		932A53E51859CBD600B5662C /* zzm_aruku01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zzm_aruku01.png; path = ../../../products/FoldableImages/FoldableImages/Images/Zunko/zzm_aruku01.png; sourceTree = "<group>"; };
-		932A53E71859CC1800B5662C /* zzm_mochi01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zzm_mochi01.png; path = ../../../products/FoldableImages/FoldableImages/Images/Zunko/zzm_mochi01.png; sourceTree = "<group>"; };
+		932A53E91859E20200B5662C /* zzm_mochi01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_mochi01.png; sourceTree = "<group>"; };
+		932A53EB1859E23200B5662C /* zzm_aruku01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_aruku01.png; sourceTree = "<group>"; };
+		932A53EC1859E23200B5662C /* zzm_zunda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_zunda.png; sourceTree = "<group>"; };
 		9333187E1850E1AD00625A7E /* CIFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933318811850E1AD00625A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		933318831850E1AD00625A7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,9 +149,9 @@
 		933318881850E1AE00625A7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				932A53E71859CC1800B5662C /* zzm_mochi01.png */,
-				932A53E51859CBD600B5662C /* zzm_aruku01.png */,
-				932A53E31859C0C200B5662C /* zzm_zunda.png */,
+				932A53EB1859E23200B5662C /* zzm_aruku01.png */,
+				932A53EC1859E23200B5662C /* zzm_zunda.png */,
+				932A53E91859E20200B5662C /* zzm_mochi01.png */,
 				933318B81850E2E000625A7E /* zzm_taberu01.png */,
 				933318891850E1AE00625A7E /* CIFilters-Info.plist */,
 				9333188A1850E1AE00625A7E /* InfoPlist.strings */,
@@ -256,12 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9333189A1850E1AE00625A7E /* Images.xcassets in Resources */,
-				932A53E81859CC1800B5662C /* zzm_mochi01.png in Resources */,
-				932A53E41859C0C200B5662C /* zzm_zunda.png in Resources */,
+				932A53EA1859E20200B5662C /* zzm_mochi01.png in Resources */,
+				932A53ED1859E23200B5662C /* zzm_aruku01.png in Resources */,
 				9333188C1850E1AE00625A7E /* InfoPlist.strings in Resources */,
+				932A53EE1859E23200B5662C /* zzm_zunda.png in Resources */,
 				933318951850E1AE00625A7E /* Main.storyboard in Resources */,
 				933318B91850E2E000625A7E /* zzm_taberu01.png in Resources */,
-				932A53E61859CBD600B5662C /* zzm_aruku01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
