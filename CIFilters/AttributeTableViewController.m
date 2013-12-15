@@ -290,6 +290,7 @@
         }
         CGImageRef cgImage = [context createCGImage:result fromRect:rect];
         vc.imageView.image = [UIImage imageWithCGImage:cgImage];
+        CGImageRelease(cgImage);
     } else {
         NSLog(@"warning: nil result");
     }
