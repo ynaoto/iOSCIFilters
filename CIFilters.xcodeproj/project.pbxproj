@@ -12,6 +12,7 @@
 		932A53EA1859E20200B5662C /* zzm_mochi01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53E91859E20200B5662C /* zzm_mochi01.png */; };
 		932A53ED1859E23200B5662C /* zzm_aruku01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53EB1859E23200B5662C /* zzm_aruku01.png */; };
 		932A53EE1859E23200B5662C /* zzm_zunda.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53EC1859E23200B5662C /* zzm_zunda.png */; };
+		93301962185D5C510078F58C /* zzm_edama.png in Resources */ = {isa = PBXBuildFile; fileRef = 93301961185D5C510078F58C /* zzm_edama.png */; };
 		933318821850E1AD00625A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318811850E1AD00625A7E /* Foundation.framework */; };
 		933318841850E1AD00625A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318831850E1AD00625A7E /* CoreGraphics.framework */; };
 		933318861850E1AD00625A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318851850E1AD00625A7E /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 		932A53E91859E20200B5662C /* zzm_mochi01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_mochi01.png; sourceTree = "<group>"; };
 		932A53EB1859E23200B5662C /* zzm_aruku01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_aruku01.png; sourceTree = "<group>"; };
 		932A53EC1859E23200B5662C /* zzm_zunda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_zunda.png; sourceTree = "<group>"; };
+		93301961185D5C510078F58C /* zzm_edama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_edama.png; sourceTree = "<group>"; };
 		9333187E1850E1AD00625A7E /* CIFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933318811850E1AD00625A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		933318831850E1AD00625A7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +155,7 @@
 				932A53EC1859E23200B5662C /* zzm_zunda.png */,
 				932A53E91859E20200B5662C /* zzm_mochi01.png */,
 				933318B81850E2E000625A7E /* zzm_taberu01.png */,
+				93301961185D5C510078F58C /* zzm_edama.png */,
 				933318891850E1AE00625A7E /* CIFilters-Info.plist */,
 				9333188A1850E1AE00625A7E /* InfoPlist.strings */,
 				9333188D1850E1AE00625A7E /* main.m */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93301962185D5C510078F58C /* zzm_edama.png in Resources */,
 				9333189A1850E1AE00625A7E /* Images.xcassets in Resources */,
 				932A53EA1859E20200B5662C /* zzm_mochi01.png in Resources */,
 				932A53ED1859E23200B5662C /* zzm_aruku01.png in Resources */,

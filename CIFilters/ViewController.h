@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *targetImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *maskImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *gradientImageView;
 
 @end

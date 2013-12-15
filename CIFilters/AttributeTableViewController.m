@@ -95,7 +95,7 @@
     filter = [CIFilter filterWithName:self.filterName];
     attributes = filter.attributes;
     inputKeys = filter.inputKeys;
-    [filter setDefaults];
+//    [filter setDefaults];
 }
 
 - (void)didReceiveMemoryWarning
@@ -144,7 +144,10 @@
     id attr = attributes[attrKey];
     NSString *attrClass = attr[kCIAttributeClass];
     NSString *attrType = attr[kCIAttributeType];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%@)", attrType, attrClass];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@(%@) %@",
+                                 [attrType stringByReplacingOccurrencesOfString:@"CIAttribute" withString:@""],
+                                 attrClass,
+                                 [filter valueForKey:attrKey]];
     
     for (UIView *view in cell.contentView.subviews) {
         if ([view isKindOfClass:MySlider.class]) {
@@ -155,6 +158,14 @@
     CGFloat cellW = cell.frame.size.width;
     CGFloat cellH = cell.frame.size.height;
     
+    // NSNumber
+    // CIImage
+    // CIColor
+    // CIVector
+    // NSValue
+    // NSData
+    // NSString
+    // NSObject
     if ([attrClass isEqualToString:@"NSNumber"]) {
         MySlider *slider = [[MySlider alloc] initWithFrame:CGRectMake(cellW/2, 0, cellW/2, cellH)];
         [cell.contentView addSubview:slider];
@@ -252,24 +263,35 @@
     }
 
     //kCIInputGradientImageKey, __IPHONE_NA
+#define kCIInputGradientImageKey @"inputGradientImage"
     //kCIInputShadingImageKey, __IPHONE_NA
 
     if ([inputKeys containsObject:kCIInputBackgroundImageKey]) {
         [filter setValue:vc.backgroundImageView.CIImage forKey:kCIInputBackgroundImageKey];
     }
     
+    if ([inputKeys containsObject:kCIInputTargetImageKey]) {
+        [filter setValue:vc.targetImageView.CIImage forKey:kCIInputTargetImageKey];
+    }
+
     if ([inputKeys containsObject:kCIInputMaskImageKey]) {
         [filter setValue:vc.maskImageView.CIImage forKey:kCIInputMaskImageKey];
     }
     
-    if ([inputKeys containsObject:kCIInputTargetImageKey]) {
-        [filter setValue:vc.targetImageView.CIImage forKey:kCIInputTargetImageKey];
+    if ([inputKeys containsObject:kCIInputGradientImageKey]) {
+        [filter setValue:vc.gradientImageView.CIImage forKey:kCIInputGradientImageKey];
     }
 
     CIImage *result = filter.outputImage;
     if (result) {
         CGRect extent = result.extent;
-        CGImageRef cgImage = [context createCGImage:result fromRect:extent];
+        CGImageRef cgImage;
+        if (CGRectIsInfinite(extent)) {
+            NSLog(@"infinite extent!");
+            cgImage = [context createCGImage:result fromRect:vc.imageView.bounds];
+        } else {
+            cgImage = [context createCGImage:result fromRect:extent];
+        }
         vc.imageView.image = [UIImage imageWithCGImage:cgImage];
     } else {
         NSLog(@"warning: nil result");
