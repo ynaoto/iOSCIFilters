@@ -256,8 +256,6 @@
     AppDelegate *app = UIApplication.sharedApplication.delegate;
     ViewController *vc = (ViewController*)app.window.rootViewController;
 
-    CIContext *context = [CIContext contextWithOptions:nil];
-    
     if ([inputKeys containsObject:kCIInputImageKey]) {
         [filter setValue:vc.imageView.CIImage forKey:kCIInputImageKey];
     }
@@ -284,14 +282,13 @@
 
     CIImage *result = filter.outputImage;
     if (result) {
-        CGRect extent = result.extent;
-        CGImageRef cgImage;
-        if (CGRectIsInfinite(extent)) {
+        CIContext *context = [CIContext contextWithOptions:nil];
+        CGRect rect = result.extent;
+        if (CGRectIsInfinite(rect)) {
             NSLog(@"infinite extent!");
-            cgImage = [context createCGImage:result fromRect:vc.imageView.bounds];
-        } else {
-            cgImage = [context createCGImage:result fromRect:extent];
+            rect = vc.imageView.bounds;
         }
+        CGImageRef cgImage = [context createCGImage:result fromRect:rect];
         vc.imageView.image = [UIImage imageWithCGImage:cgImage];
     } else {
         NSLog(@"warning: nil result");
