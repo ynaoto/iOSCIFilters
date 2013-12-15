@@ -118,7 +118,7 @@
 
 - (void)sliderChanged:(MySlider*)sender event:(UIEvent*)event
 {
-    NSLog(@"%s: value = %g, key = %@, class = %@", __FUNCTION__, sender.value, sender.attributeKey, sender.attributeClass);
+//    NSLog(@"%s: value = %g, key = %@, class = %@", __FUNCTION__, sender.value, sender.attributeKey, sender.attributeClass);
     NSString *attrClass = sender.attributeClass;
     if ([attrClass isEqualToString:@"NSNumber"]) {
         [filter setValue:@(sender.value) forKey:sender.attributeKey];
@@ -261,7 +261,7 @@
     }
 
     //kCIInputGradientImageKey, __IPHONE_NA
-#define kCIInputGradientImageKey @"inputGradientImage"
+#define kCIInputGradientImageKey @"inputGradientImage" // ??? CIColorMap で使っている
     //kCIInputShadingImageKey, __IPHONE_NA
 
     if ([inputKeys containsObject:kCIInputBackgroundImageKey]) {
