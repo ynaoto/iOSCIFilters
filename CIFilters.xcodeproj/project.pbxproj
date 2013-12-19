@@ -31,6 +31,7 @@
 		933318BC1850E3A200625A7E /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933318BB1850E3A200625A7E /* CategoryTableViewController.m */; };
 		933AC41C1862F57700A39A2D /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 933AC41B1862F57700A39A2D /* Messages.m */; };
 		933AC4221863010700A39A2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 933AC4241863010700A39A2D /* Localizable.strings */; };
+		933AC42A1863255100A39A2D /* MyMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 933AC4291863255100A39A2D /* MyMessages.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +80,10 @@
 		933AC41D1862FD4C00A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		933AC41E1862FD4C00A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		933AC41F1862FD4C00A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		933AC4231863010700A39A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		933AC4251863011200A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		933AC4231863010700A39A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		933AC4251863011200A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		933AC4281863255100A39A2D /* MyMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMessages.h; sourceTree = "<group>"; };
+		933AC4291863255100A39A2D /* MyMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMessages.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				933318971850E1AE00625A7E /* ViewController.m */,
 				933AC41A1862F57700A39A2D /* Messages.h */,
 				933AC41B1862F57700A39A2D /* Messages.m */,
+				933AC4281863255100A39A2D /* MyMessages.h */,
+				933AC4291863255100A39A2D /* MyMessages.m */,
 				933318991850E1AE00625A7E /* Images.xcassets */,
 				933318881850E1AE00625A7E /* Supporting Files */,
 			);
@@ -303,6 +308,7 @@
 				9333188E1850E1AE00625A7E /* main.m in Sources */,
 				933318BC1850E3A200625A7E /* CategoryTableViewController.m in Sources */,
 				933AC41C1862F57700A39A2D /* Messages.m in Sources */,
+				933AC42A1863255100A39A2D /* MyMessages.m in Sources */,
 				932A53E2185996B600B5662C /* AttributeTableViewController.m in Sources */,
 				932A53DF18598C8300B5662C /* FilterTableViewController.m in Sources */,
 			);

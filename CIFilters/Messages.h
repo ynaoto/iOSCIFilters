@@ -10,9 +10,6 @@
 @interface Messages : NSObject
 + (instancetype)theMessages;
 
-// ここにアプリ内で使う文字列をプロパティとして定義し、Localizable.strings 内ではプロパティ名をキーとして値を記述します。
-@property (nonatomic) NSString *errorAlertTitle;
-@property (nonatomic) NSString *nullResult;
-@property (nonatomic) NSString *ok;
+// サブクラス内で使う文字列をプロパティとして定義し、Localizable.strings 内ではプロパティ名をキーとして値を記述します。
 
 @end

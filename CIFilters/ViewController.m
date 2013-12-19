@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Messages.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *originalImageView;
@@ -15,17 +14,11 @@
 @end
 
 @implementation ViewController
-{
-    Messages *messages;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-//    messages = [[Messages alloc] init];
-    messages = [Messages theMessages];
 }
 
 - (void)didReceiveMemoryWarning

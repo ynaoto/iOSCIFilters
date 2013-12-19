@@ -9,7 +9,7 @@
 #import "AttributeTableViewController.h"
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "Messages.h"
+#import "MyMessages.h"
 
 @interface UIImageView (CIImage)
 
@@ -293,7 +293,7 @@
         vc.imageView.image = [UIImage imageWithCGImage:cgImage];
         CGImageRelease(cgImage);
     } else {
-        Messages *messages = [Messages theMessages];
+        MyMessages *messages = [MyMessages theMessages];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:messages.errorAlertTitle
                                                         message:messages.nullResult
                                                        delegate:nil
