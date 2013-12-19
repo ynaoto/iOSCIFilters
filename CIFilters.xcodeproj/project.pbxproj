@@ -29,6 +29,8 @@
 		933318AD1850E1AE00625A7E /* CIFiltersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933318AC1850E1AE00625A7E /* CIFiltersTests.m */; };
 		933318B91850E2E000625A7E /* zzm_taberu01.png in Resources */ = {isa = PBXBuildFile; fileRef = 933318B81850E2E000625A7E /* zzm_taberu01.png */; };
 		933318BC1850E3A200625A7E /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933318BB1850E3A200625A7E /* CategoryTableViewController.m */; };
+		933AC41C1862F57700A39A2D /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 933AC41B1862F57700A39A2D /* Messages.m */; };
+		933AC4221863010700A39A2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 933AC4241863010700A39A2D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,13 @@
 		933318B81850E2E000625A7E /* zzm_taberu01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_taberu01.png; sourceTree = "<group>"; };
 		933318BA1850E3A200625A7E /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
 		933318BB1850E3A200625A7E /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
+		933AC41A1862F57700A39A2D /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
+		933AC41B1862F57700A39A2D /* Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
+		933AC41D1862FD4C00A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		933AC41E1862FD4C00A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		933AC41F1862FD4C00A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		933AC4231863010700A39A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		933AC4251863011200A39A2D /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +151,8 @@
 				932A53E1185996B600B5662C /* AttributeTableViewController.m */,
 				933318961850E1AE00625A7E /* ViewController.h */,
 				933318971850E1AE00625A7E /* ViewController.m */,
+				933AC41A1862F57700A39A2D /* Messages.h */,
+				933AC41B1862F57700A39A2D /* Messages.m */,
 				933318991850E1AE00625A7E /* Images.xcassets */,
 				933318881850E1AE00625A7E /* Supporting Files */,
 			);
@@ -160,6 +171,7 @@
 				9333188A1850E1AE00625A7E /* InfoPlist.strings */,
 				9333188D1850E1AE00625A7E /* main.m */,
 				9333188F1850E1AE00625A7E /* CIFilters-Prefix.pch */,
+				933AC4241863010700A39A2D /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,6 +253,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 933318751850E1AD00625A7E;
 			productRefGroup = 9333187F1850E1AD00625A7E /* Products */;
@@ -262,6 +275,7 @@
 				9333189A1850E1AE00625A7E /* Images.xcassets in Resources */,
 				932A53EA1859E20200B5662C /* zzm_mochi01.png in Resources */,
 				932A53ED1859E23200B5662C /* zzm_aruku01.png in Resources */,
+				933AC4221863010700A39A2D /* Localizable.strings in Resources */,
 				9333188C1850E1AE00625A7E /* InfoPlist.strings in Resources */,
 				932A53EE1859E23200B5662C /* zzm_zunda.png in Resources */,
 				933318951850E1AE00625A7E /* Main.storyboard in Resources */,
@@ -288,6 +302,7 @@
 				933318921850E1AE00625A7E /* AppDelegate.m in Sources */,
 				9333188E1850E1AE00625A7E /* main.m in Sources */,
 				933318BC1850E3A200625A7E /* CategoryTableViewController.m in Sources */,
+				933AC41C1862F57700A39A2D /* Messages.m in Sources */,
 				932A53E2185996B600B5662C /* AttributeTableViewController.m in Sources */,
 				932A53DF18598C8300B5662C /* FilterTableViewController.m in Sources */,
 			);
@@ -316,6 +331,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9333188B1850E1AE00625A7E /* en */,
+				933AC41E1862FD4C00A39A2D /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -324,6 +340,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				933318941850E1AE00625A7E /* Base */,
+				933AC41D1862FD4C00A39A2D /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -332,8 +349,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				933318AA1850E1AE00625A7E /* en */,
+				933AC41F1862FD4C00A39A2D /* ja */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		933AC4241863010700A39A2D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				933AC4231863010700A39A2D /* Base */,
+				933AC4251863011200A39A2D /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,42 @@
+
+/* Class = "IBUINavigationItem"; title = "CICategory"; ObjectID = "5Kt-Ud-QW2"; */
+"5Kt-Ud-QW2.title" = "CICategory";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "5Zz-U3-TpC"; */
+"5Zz-U3-TpC.text" = "Subtitle";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "5tq-Ht-6gZ"; */
+"5tq-Ht-6gZ.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "Filters"; ObjectID = "6Nc-Oj-68V"; */
+"6Nc-Oj-68V.title" = "Filters";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "E7J-th-8V7"; */
+"E7J-th-8V7.text" = "Title";
+
+/* Class = "IBUILabel"; text = "input"; ObjectID = "Eg8-gq-2a1"; */
+"Eg8-gq-2a1.text" = "input";
+
+/* Class = "IBUILabel"; text = "target"; ObjectID = "IQa-vT-EME"; */
+"IQa-vT-EME.text" = "target";
+
+/* Class = "IBUILabel"; text = "mask"; ObjectID = "JlC-DO-YCy"; */
+"JlC-DO-YCy.text" = "mask";
+
+/* Class = "IBUIButton"; normalTitle = "Reset"; ObjectID = "aVi-Rn-HFG"; */
+"aVi-Rn-HFG.normalTitle" = "リセット";
+
+/* Class = "IBUILabel"; text = "background"; ObjectID = "b8B-BL-M79"; */
+"b8B-BL-M79.text" = "background";
+
+/* Class = "IBUINavigationItem"; title = "Attributes"; ObjectID = "ejp-vz-xJb"; */
+"ejp-vz-xJb.title" = "Attributes";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "jQS-rR-39O"; */
+"jQS-rR-39O.text" = "Title";
+
+/* Class = "IBUILabel"; text = "gradient"; ObjectID = "kv7-ES-Elc"; */
+"kv7-ES-Elc.text" = "gradient";
+
+/* Class = "IBUIBarButtonItem"; title = "Apply"; ObjectID = "zwP-3I-3kb"; */
+"zwP-3I-3kb.title" = "適用";
