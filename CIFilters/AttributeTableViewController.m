@@ -9,6 +9,7 @@
 #import "AttributeTableViewController.h"
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "LabeledSlider.h"
 #import "MyMessages.h"
 
 @interface UIImageView (CIImage)
@@ -28,7 +29,7 @@
 
 @end
 
-@interface MySlider : UISlider
+@interface MySlider : LabeledSlider
 @property (nonatomic) NSString *attributeKey;
 @property (nonatomic) NSString *attributeClass;
 @property (nonatomic) CIVector *attributeVector;
@@ -37,28 +38,6 @@
 @end
 
 @implementation MySlider
-{
-    UILabel *valueLabel;
-}
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        CGFloat w = self.frame.size.width;
-        CGFloat h = self.frame.size.height;
-        valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, w, h/2)];
-        [self addSubview:valueLabel];
-    }
-    return self;
-}
-
-- (CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(float)value
-{
-    CGRect result = [super thumbRectForBounds:bounds trackRect:rect value:value];
-    valueLabel.text = [NSString stringWithFormat:@"%g", value];
-    return result;
-}
 
 @end
 

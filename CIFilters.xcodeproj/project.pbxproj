@@ -12,6 +12,7 @@
 		932A53EA1859E20200B5662C /* zzm_mochi01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53E91859E20200B5662C /* zzm_mochi01.png */; };
 		932A53ED1859E23200B5662C /* zzm_aruku01.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53EB1859E23200B5662C /* zzm_aruku01.png */; };
 		932A53EE1859E23200B5662C /* zzm_zunda.png in Resources */ = {isa = PBXBuildFile; fileRef = 932A53EC1859E23200B5662C /* zzm_zunda.png */; };
+		932B757118681C09007349A8 /* LabeledSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B757018681C09007349A8 /* LabeledSlider.m */; };
 		93301962185D5C510078F58C /* zzm_edama.png in Resources */ = {isa = PBXBuildFile; fileRef = 93301961185D5C510078F58C /* zzm_edama.png */; };
 		933318821850E1AD00625A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318811850E1AD00625A7E /* Foundation.framework */; };
 		933318841850E1AD00625A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933318831850E1AD00625A7E /* CoreGraphics.framework */; };
@@ -52,6 +53,8 @@
 		932A53E91859E20200B5662C /* zzm_mochi01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_mochi01.png; sourceTree = "<group>"; };
 		932A53EB1859E23200B5662C /* zzm_aruku01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_aruku01.png; sourceTree = "<group>"; };
 		932A53EC1859E23200B5662C /* zzm_zunda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_zunda.png; sourceTree = "<group>"; };
+		932B756F18681C09007349A8 /* LabeledSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabeledSlider.h; sourceTree = "<group>"; };
+		932B757018681C09007349A8 /* LabeledSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabeledSlider.m; sourceTree = "<group>"; };
 		93301961185D5C510078F58C /* zzm_edama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zzm_edama.png; sourceTree = "<group>"; };
 		9333187E1850E1AD00625A7E /* CIFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933318811850E1AD00625A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,6 +161,8 @@
 				933AC41B1862F57700A39A2D /* Messages.m */,
 				933AC4281863255100A39A2D /* MyMessages.h */,
 				933AC4291863255100A39A2D /* MyMessages.m */,
+				932B756F18681C09007349A8 /* LabeledSlider.h */,
+				932B757018681C09007349A8 /* LabeledSlider.m */,
 				933318991850E1AE00625A7E /* Images.xcassets */,
 				933318881850E1AE00625A7E /* Supporting Files */,
 			);
@@ -306,6 +311,7 @@
 				933318981850E1AE00625A7E /* ViewController.m in Sources */,
 				933318921850E1AE00625A7E /* AppDelegate.m in Sources */,
 				9333188E1850E1AE00625A7E /* main.m in Sources */,
+				932B757118681C09007349A8 /* LabeledSlider.m in Sources */,
 				933318BC1850E3A200625A7E /* CategoryTableViewController.m in Sources */,
 				933AC41C1862F57700A39A2D /* Messages.m in Sources */,
 				933AC42A1863255100A39A2D /* MyMessages.m in Sources */,
